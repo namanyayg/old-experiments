@@ -1,0 +1,271 @@
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+/*** @CORE ***/
+
+
+body {
+  font: 100%/1.5 'PT Sans';
+  color:#555;
+}
+
+.wrapper {
+  width:80%;
+  margin:0 auto;
+}
+
+/*** @TYPOGRAPHY ***/
+
+/***
+Formula for Vertical Rythym
+
+Find a number divisible
+by base number larger than
+font size px.
+
+This number is in pixels,
+to be divided by 16, then
+by the font-size in em.
+
+You get line-height.
+
+***/
+
+h1,h2,h3,h4,h5,h6,
+ul,ol,dl,p,address,figure,pre,fieldset,table,hr, .island,.media{
+  margin-bottom:24px;
+  margin-bottom:1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Shadows into light', cursive;
+}
+
+h1,.alpha{
+  font-size:3em;
+  line-height:1;
+}
+h2{
+  font-size:4.5em;
+  line-height:1;
+}
+h3{
+  font-size:1.25em;   /* 20px */
+  line-height:1.2;    /* 24px */
+}
+h4{
+  font-size:1.125em;    /* 18px */
+  line-height:1.333;    /* 24px */
+}
+h5{
+  font-weight:bold;
+}
+h5,
+h6{
+  font-size:1em;      /* 16px */
+  line-height:1.5;    /* 24px */
+}
+
+
+/*** @HEADER ***/
+
+.logo {
+  position:fixed;
+  text-align:center;
+  top:0;left:0;right:0;
+  opacity:.1;
+}
+
+.logo h1 {
+  margin-top:0;
+}
+
+
+/*** @MENU ***/
+
+.main {
+  width:100%;
+  position:fixed;
+  bottom:0;left:0;right:0;
+  font: 2em/1.5 Shadows Into Light;
+}
+
+.main ul {
+  padding:0;
+}
+
+.main li {
+  list-style:none;
+  width:33.333333333333333333333%;
+  float:left;
+}
+
+.main a {
+  list-style:none;
+  float:left;
+  text-align:center;
+  padding: .25em 0;
+  border:1px solid rgba(0,0,0,.3);
+  text-decoration:none;
+  color:white;
+  text-shadow: 1px 1px black;
+  width:100%;height:100%;
+  border-top:none;border-bottom:none;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main li:nth-child(1) a {
+  background:#02d7ca;
+  border-left:none;
+}
+
+.main li:nth-child(2) a {
+  background:#d84c00;
+}
+
+.main li:nth-child(3) a {
+  background:#fff880;
+  border-right:none;
+}
+
+.main a:hover {
+  color:white;
+}
+
+/*** CONTENT ***/
+
+body {
+  height: 100vh;
+  overflow:hidden;
+}
+
+.smooth {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+-moz-::selection {
+  background:rgba(0,0,0,.3);
+  color:white;
+}
+
+::selection {
+  background:rgba(0,0,0,.3);
+  color:white;
+}
+
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.page1, .page2, .page3 {
+  background: #02d7ca;
+  float:left;
+  min-height:100vh;
+  width:100%;
+  color:white;
+  overflow:hidden;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.page2 {
+  background:#d84c00;
+}
+
+.page3 {
+  background:#fff880;
+  color:#666;
+}
+
+a {
+  color:rgba(0,0,0,.5);
+  text-decoration:none;
+}
+
+a:hover {
+  color:rgba(0,0,0,.8);
+}
+
+h2 + p {
+  margin-top: 3em;
+}
+
+.intro {
+  font-size:1.125em;
+  line-height:1.333;
+}
+
+/*** CONTACT ***/
+
+input, textarea {
+  border:1px solid rgba(0,0,0,.3);
+  width: 50%;
+  margin:0 auto;
+  display:block;
+  border-radius: .5em;
+  padding:.5em 1em;
+  margin-bottom:1.5em;
+}
+
+button {
+  width:50%;
+  text-align:center;
+  font: 2em/1.5 shadows into light;
+  padding:.5em;
+  margin: 0 auto;
+  border:none;
+  outline:none;
+  display:block !important;
+  background:#d84c00;
+  border-radius:.5em;
+  border:1px solid rgba(0,0,0,.2);
+  border-bottom:.25em solid rgba(0,0,0,.1);
+  border-right:.25em solid rgba(0,0,0,.2);
+  color:white;
+  text-shadow: 1px 1px black;
+  margin-top:0;
+}
+
+button:active {
+  border:1px solid rgba(0,0,0,.2);
+  margin-top:1em;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+
+.credits {
+  opacity: .1;
+  position:fixed;
+  right:.5em;
+}
+
+/* Restoration: responsive, scrollable panels and keyboard/hash navigation. */
+body { font-family: 'PT Sans', sans-serif; }
+.pages-container { display: flex; width: 300%; transition: transform 1s ease; }
+.pages-container > section { width: 33.333333%; height: 100vh; height: 100dvh; overflow-y: auto; padding: 1.5rem 0 6rem; flex-shrink: 0; }
+h2 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+.main { z-index: 2; } .main ul { margin: 0; } .logo { pointer-events: none; }
+.credits { bottom: 4rem; pointer-events: none; }
+input, textarea { box-sizing: border-box; } button:disabled { cursor: default; }
+@media (max-width: 600px) { .wrapper { width: 88%; } input, textarea, button { width: 100%; } .main { font-size: 1.4em; } }
+@media (prefers-reduced-motion: reduce) { .pages-container { transition: none; } }
+.logo { z-index: 1; }
